@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+</head>
+
+<body>
+
+    <!--header section-->
+    <header class="header  text-white p-4">
+        <p class=" text-center mx-auto my-0 w-75 font-weight-bolder title">Oraganisation<span class="text-danger">.com</span></p>
+        <p class="text-center mx-auto my-0 w-75 font-italic font-weight-lighter text-secondary tag-line">Here comes the tag line</p>
+    </header>
+
+    <!--login form-->
+    <div class="card mx-auto m-5 text-center  shadow-lg login_card">
+
+        <div class="card-body">
+            <h2 class="card-title m-4">Sign In</h2>
+            <form action="">
+
+                <div class="form-group m-3">
+
+                    <select name="ima" class="custom-select w-75 form-inp" id="ima">
+                    <option selected>I'm a</option>
+                    <option value="student">Student</option>
+                    <option value="tutor">Tutor</option>
+                    </select>
+                </div>
+
+                <div class="form-group m-3">
+                    <input type="text" class="form-control form-inp" placeholder="Username or Email" id="usr">
+                </div>
+                <div class="form-group m-3">
+                    <input type="password" class="form-control form-inp" placeholder="Password" id="pwd">
+                </div>
+                <div>
+                    <a href="#" id="frgtpwd">Forgot Password ?</a>
+                </div>
+                <div class="form-group m-4">
+                    <a href="#" class="btn btn-outline-info form-inp">Sign In</a>
+
+                </div>
+
+                <p>OR</p>
+                <div class="form-group m-4">
+                    <a href="#" class="btn btn-outline-info form-inp">Register Now</a>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-center text-white p-3 w-100" id="lg-footer">
+        <h3>Foot header</h3>
+        <h5>Footer body or quick links</h5>
+        <p>Copyrights and privacy policy</p>
+    </footer>
+
+</body>
+
+</html>

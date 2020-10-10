@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/registratrion.css" type="text/css">
+</head>
+
+<body>
+
+    <!--header section-->
+    <header class="header  text-white p-4">
+        <p class=" text-center mx-auto my-0 w-75 font-weight-bolder title">Oraganisation<span class="text-danger">.com</span></p>
+        <p class="text-center mx-auto my-0 w-75 font-italic font-weight-lighter text-secondary tag-line">Here comes the tag line</p>
+    </header>
+
+    <!--registration form-->
+    <div class="container">
+        <div class="card mx-auto m-5 text-center shadow-lg login_card">
+            <div class="card-body">
+                <h2 class="card-title m-4">Register</h2>
+                <form action="" class="w-75 mx-auto">
+                    <div class="row">
+
+                        <div class="col-sm-6 mx-auto">
+                            <div class="form-group my-3 mx-auto  w-100">
+                                <select name="regas" class="col-sm custom-select form-inp" id="regas" onchange="disp()">
+                                    <option selected disabled>Register as:</option>
+                                    <option value="student">Student</option>
+                                    <option value="tutor">Tutor</option>
+                                    </select>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row form-group m-2">
+                        <input type="text" class="col-sm form-control form-inp my-2" placeholder="First Name" id="fname">
+                        <input type="text" class="col-sm form-control form-inp my-2" placeholder="Last Name" id="lname">
+                    </div>
+                    <div class="row form-group m-2">
+                        <input type="text" class="col-sm form-control form-inp my-2" placeholder="Username" id="uname">
+                        <input type="email" class="col-sm form-control form-inp my-2" placeholder="Email" id="email">
+                    </div>
+                    <div class="row form-group m-2">
+                        <input type="password" class="col-sm form-control form-inp my-2" placeholder="Enter Password" id="pwd">
+                        <input type="password" class="col-sm form-control form-inp my-2" placeholder="Confirm Password" id="cpwd">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="form-group my-2 mx-auto w-100">
+                                <select name="education" class="custom-select w-100 form-inp" id="education">
+                                    <option selected disabled>Education</option>
+                                    <option value="primary education">Primary Education</option>
+                                    <option value="high school">High School</option>
+                                    <option value="diploma">Diploma</option>
+                                    <option value="bachelor's degree">Bachelor's Degree</option>
+                                    <option value="master's degree">Master's Degeree</option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="form-group my-2 mx-auto  ">
+                                <input type="date" class="col-sm form-control w-100 form-inp" placeholder="Date of Birth" id="dob">
+
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-group my-2 mx-auto  w-100">
+                                <select name="gender" class="custom-select w-100 form-inp" id="gender">
+                                    <option selected disabled>Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    
+                                    </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row form-group m-2">
+                        <input type="tel" class="col-sm form-control form-inp my-2" placeholder="Mobile Number" id="num">
+                        <input type="text" class="col-sm form-control form-inp my-2" placeholder="Address Line" id="address">
+                    </div>
+                    <div class="row form-group m-2">
+                        <input type="text" class="col-sm form-control form-inp my-2" placeholder="City" id="city">
+                        <input type="text" class="col-sm form-control form-inp my-2" placeholder="District" id="district">
+                        <input type="text" class="col-sm form-control form-inp my-2" placeholder="State" id="state">
+
+                    </div>
+
+                    <div class="row form-group m-2">
+                        <input type="text" class="col-sm form-control form-inp my-2" placeholder="Designation" id="designation">
+
+                        <input type="text" class="col-sm form-control form-inp my-2" placeholder="Subjects (comma separated list)" id="subjects">
+                    </div>
+
+                    <div class="row form-group m-4">
+                        <a href="#" class="btn btn-outline-info form-inp">Register Now</a>
+                    </div>
+
+            </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <footer class="bg-dark text-center text-white p-3 w-100" id="lg-footer">
+        <h3>Foot header</h3>
+        <h5>Footer body or quick links</h5>
+        <p>Copyrights and privacy policy</p>
+    </footer>
+    <script>
+        function disp() {
+            var x = document.getElementById('regas');
+            if (x.value == 'tutor') {
+                document.getElementById("subjects").style.display = "block";
+                document.getElementById("designation").style.display = "block";
+
+            } else if (x.value == "student") {
+                document.getElementById("designation").style.display = "none";
+                document.getElementById("subjects").style.display = "none";
+
+            }
+        }
+    </script>
+</body>
+
+</html>

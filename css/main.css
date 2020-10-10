@@ -1,0 +1,212 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: radial-gradient(788px at 0.7% 3.4%, #a4e7c0 0%, white 90%);
+}
+
+.carousel {
+  background: #ccc;
+}
+
+.carousel .review-section .review {
+  font-size: large;
+}
+
+header {
+  width: 100%;
+  background-color: #79e2b6;
+}
+
+header .title {
+  font-size: 2.5rem;
+}
+
+header .tag-line {
+  font-size: 1.5rem;
+}
+
+.tor {
+  background: -webkit-gradient(linear, left top, right top, from(#34e89e), to(#0f3443));
+  background: linear-gradient(to right, #34e89e, #0f3443);
+}
+
+.tol {
+  background: -webkit-gradient(linear, right top, left top, from(#34e89e), to(#0f3443));
+  background: linear-gradient(to left, #34e89e, #0f3443);
+}
+
+.jumbotron {
+  background: -webkit-gradient(linear, left top, right top, from(#616161), to(#9bc5c3));
+  background: linear-gradient(to right, #616161, #9bc5c3);
+}
+
+.jumbotron:hover,
+.col-md:hover {
+  position: relative;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*login page*/
+.login_card {
+  width: 40%;
+  border-radius: 40px;
+}
+
+.form-inp {
+  border-radius: 30px;
+  width: 75%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#frgtpwd {
+  color: red;
+}
+
+@media screen and (max-width: 830px) and (min-width: 468px) {
+  .login_card {
+    width: 75%;
+  }
+}
+
+/*media queries*/
+@media screen and (max-width: 467px) {
+  .login_card {
+    width: 90%;
+  }
+  header .title {
+    font-size: 1.5rem;
+  }
+  header .tag-line {
+    font-size: 1rem;
+  }
+}
+
+/*dashboard*/
+.tab {
+  display: block;
+  width: 25%;
+  float: left;
+  position: fixed;
+  background-color: #459c9c;
+  height: 100%;
+}
+
+.tab .signout {
+  background-color: red;
+  width: 80%;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+}
+
+.tab button {
+  background-color: inherit;
+  color: white;
+  padding: 16px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ff0000;
+}
+
+.tab button.active {
+  background-color: #0f3443;
+  border-left: 5px solid red;
+  border-right: 5px solid red;
+}
+
+.tabcontent {
+  position: fixed;
+  overflow: auto;
+  width: 75%;
+  left: 25%;
+  float: left;
+  text-align: center;
+  border-left: none;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.title-bar {
+  pointer-events: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.title-bar .menu {
+  border-right: 1px solid #635555;
+  font-size: large;
+  font-weight: bold;
+  display: inline-block;
+  width: 25%;
+  font-size: x-large;
+}
+
+.title-bar .title {
+  position: absolute;
+  width: 75%;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+  .tab {
+    display: none;
+    z-index: 1;
+    width: 50%;
+    overflow-x: hidden;
+  }
+  .tab .closebtn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .title-bar {
+    pointer-events: all;
+  }
+  .title-bar .menu {
+    cursor: pointer;
+    font-size: large;
+    width: 12%;
+  }
+  .title-bar .menu .menu-txt {
+    display: none;
+  }
+  .title-bar .title {
+    font-size: large;
+  }
+  .tabcontent {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

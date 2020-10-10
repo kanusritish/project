@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/newreg.css" type="text/css">
+    <script src="../js/newreg.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+
+</head>
+
+<body>
+
+    <!--header section-->
+    <header class="header  text-white p-4">
+        <p class=" text-center mx-auto my-0 w-75 font-weight-bolder title">Oraganisation<span class="text-danger">.com</span></p>
+        <p class="text-center mx-auto my-0 w-75 font-italic font-weight-lighter text-secondary tag-line">Here comes the tag line</p>
+    </header>
+
+    <div class="container">
+        <div class="card-body mx-auto m-5 text-center shadow-lg login_card">
+            <div class=" px-0 pt-4 pb-0 mt-3 mb-3 ">
+                <h2 id="heading">REGISTER</h2>
+                <p>All fields are mandatory</p>
+                <form id="msform">
+                    <!-- progressbar -->
+                    <ul id="progressbar">
+                        <li class="active" id="account"><strong>Account</strong></li>
+                        <li id="personal"><strong>Personal</strong></li>
+                        <li id="payment"><strong>Education</strong></li>
+                        <li id="confirm"><strong>Address</strong></li>
+                    </ul>
+
+                    <!-- fieldsets -->
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+
+                                <h2 class="fs-title col text-center">Account Information</h2>
+
+                            </div>
+                            <div class="row form-group m-2">
+                                <input type="text" class="col-sm form-control form-inp my-2" placeholder="Username" id="uname">
+                                <input type="email" class="col-sm form-control form-inp my-2" placeholder="Email" id="email">
+                            </div>
+                            <div class="row form-group m-2">
+                                <input type="password" class="col-sm form-control form-inp my-2" placeholder="Enter Password" id="pwd">
+                                <input type="password" class="col-sm form-control form-inp my-2" placeholder="Confirm Password" id="cpwd">
+                            </div>
+                        </div>
+
+                        <input type="button" name="next" class="next action-button btn btn-outline form-inp" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+
+                                <h2 class="fs-title col text-center">Personal Information</h2>
+
+
+
+                            </div>
+                            <div class="row form-group m-2">
+                                <input type="text" class="col-sm form-control form-inp my-2" placeholder="First Name" id="fname">
+                                <input type="text" class="col-sm form-control form-inp my-2" placeholder="Last Name" id="lname">
+                            </div>
+                            <div class="row form-group m-2">
+
+                                <input type="date" class="col-sm form-control form-inp my-2" placeholder="Date of Birth" id="dob">
+
+                                <select name="gender" class="col-sm custom-select form-inp my-2" id="gender">
+                                            <option selected disabled>Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            <div class="row m-2">
+                                <input type="tel" class="col-sm form-control form-inp my-2" placeholder="Mobile Number" id="num">
+
+                            </div>
+                        </div>
+
+                        <input type="button" name="next" class="next action-button btn btn-outline form-inp" value="Next" />
+                        <input type="button" name="previous" class="previous action-button-previous btn btn-outline form-inp" value="Previous" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+
+                                <h2 class="fs-title col text-center">Education:</h2>
+
+                            </div>
+
+                            <div class="row form-group m-2">
+
+
+
+                                <select name="education" class="col-sm custom-select form-inp my-2" id="education">
+                                            <option selected disabled>Education</option>
+                                            <option value="Primary">Primary Education</option>
+                                            <option value="High">High School</option>
+                                            <option value="Diploma">Diploma</option>
+                                            <option value="Bachelor">Bachelor's Degree</option>
+                                            <option value="Master">Master's Degree</option>
+                                </select>
+                                <input type="text" class="col-sm form-control form-inp my-2" placeholder="Designation" id="designation">
+
+
+
+                            </div>
+                            <div class="row form-group m-2">
+
+
+                                <input type="number" class="col-sm form-control form-inp my-2" placeholder="Work Experience in years" id="exp">
+                            </div>
+                            <div class="row form-group m-2">
+
+
+                                <input type="text" class="col-sm form-control form-inp my-2" placeholder="Subjects (comma separated list)" id="subjects">
+                            </div>
+                        </div>
+
+                        <input type="button" name="next" class="next action-button btn btn-outline form-inp" value="Next" />
+                        <input type="button" name="previous" class="previous action-button-previous btn btn-outline form-inp" value="Previous" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+
+                                <h2 class="fs-title col text-center">Address</h2>
+
+                            </div>
+                            <div class="row form-group m-2">
+
+                                <input type="text" class="col-sm form-control form-inp my-2" placeholder="Address Line" id="address">
+                                <input type="text" class="col-sm form-control form-inp my-2" placeholder="City" id="city">
+                            </div>
+                            <div class="row form-group m-2">
+
+                                <input type="text" class="col-sm form-control form-inp my-2" placeholder="District" id="district">
+                                <input type="text" class="col-sm form-control form-inp my-2" placeholder="State" id="state">
+
+                            </div>
+                        </div>
+
+                        <input type="button" name="next" class="next action-button btn btn-outline-success form-inp" value="Submit" />
+                        <input type="button" name="previous" class="previous action-button-previous btn btn-outline form-inp" value="Previous" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center ">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2 login_card shadow-lg">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark w-100 text-center text-white p-3">
+        <h3>Foot header</h3>
+        <h5>Footer body or quick links</h5>
+        <p>Copyrights and privacy policy</p>
+    </footer>
+</body>
+
+</html>

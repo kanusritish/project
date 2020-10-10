@@ -1,0 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: radial-gradient(788px at 0.7% 3.4%, #a4e7c0 0%, white 90%);
+}
+
+header {
+  width: 100%;
+  background-color: #79e2b6;
+}
+
+header .title {
+  font-size: 2.5rem;
+}
+
+header .tag-line {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 467px) {
+  header .title {
+    font-size: 1.5rem;
+  }
+  header .tag-line {
+    font-size: 1rem;
+  }
+}
+
+/*login page*/
+.login_card {
+  border-radius: 40px;
+}
+
+.form-inp {
+  border-radius: 30px;
+  width: 100%;
+  display: block;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  text-align: center;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#subjects,
+#designation {
+  display: none;
+}
+
+/*media queries*/
+@media screen and (max-width: 576px) {
+  .form-inp {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #reg {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=registratrion.css.map */
